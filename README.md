@@ -30,7 +30,9 @@ regr=linear_model.LinearRegression()
 regr.fit(a,b)
 print("Coefficient: ",regr.coef_)
 print("Intercept:",regr.intercept_)
-print("Account",regr.predict([[3300,1300]]))
+predictedCO2=regr.predict([[3300,1300]])
+print("predicted CO2 for the corresponding weight and volume",predictedCO2)
+
 ```
 ## Output:
 ![image](https://github.com/DEEPAK2200233/Multivariate-Linear-Regression/assets/118707676/c8d8cd02-d7cd-4854-9f20-47233efb05d9)
